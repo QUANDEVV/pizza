@@ -1,108 +1,79 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default margin and padding */
+body, h1, h2, table, form, p {
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+/* Navbar styles */
+header {
+  background-color: #333;
+  height: 60px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main content styles */
 h1 {
   text-align: center;
+  margin-top: 40px;
 }
 
-h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-select,
-input[type="checkbox"],
-input[type="text"] {
-  margin-bottom: 10px;
-  padding: 8px;
-  width: 100%;
+#pizza-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-}
-
-caption {
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
 #order-table {
-  font-size: 14px;
-  width: auto;
+  margin: 40px auto;
+  border-collapse: collapse;
+  width: 400px;
 }
 
 #order-table th {
-  width: 120px;
+  text-align: left;
+  padding: 8px;
 }
 
 #order-table td {
-  width: 200px;
+  padding: 8px;
 }
 
 #delivery-details {
-  margin: 20px auto;
-  text-align: center;
-}
-
-#selections-table {
-  margin: 20px auto;
-  width: 20%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-#selections-table th,
-#selections-table td {
-  padding: 8px;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
   border: 1px solid #ccc;
-  text-align: left;
+  border-radius: 4px;
+  display: none;
 }
 
-#selections-table th {
-  width: 120px;
+/* Footer styles */
+footer {
+  background-color: #f4f4f4;
+  height: 60px;
 }
 
-#selections-table td {
-  width: 200px;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer p {
+  color: #666;
 }
