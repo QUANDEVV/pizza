@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PizzaPal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>PizzaPal - Order Your Pizza</h1>
+    <form id="pizza-form">
+        <h2>Your Selections</h2>
+        <label for="size">Size:</label>
+        <select id="size" name="size"></select>
+        <br>
+        <label for="type">Type:</label>
+        <select id="type" name="type"></select>
+        <br>
+        <label for="crustings">Crustings:</label>
+        <input type="checkbox" id="pepperoni" name="crustings" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="onions" name="crustings" value="Onions">
+        <label for="onions">Onions</label>
+        <input type="checkbox" id="bacon" name="crustings" value="Bacon">
+        <label for="bacon">Bacon</label>
+        <br>
+        <input type="submit" value="Submit Order">
+    </form>
+    <table id="order-table">
+        <caption>Order Summary</caption>
+        <tr>
+            <th>Size:</th>
+            <td id="size-selection"></td>
+        </tr>
+        <tr>
+            <th>Type:</th>
+            <td id="type-selection"></td>
+        </tr>
+        <tr>
+            <th>Crustings:</th>
+            <td id="crustings-selection"></td>
+        </tr>
+        <tr>
+            <th>Total cost:</th>
+            <td id="total-cost"></td>
+        </tr>
+    </table>
+    <div id="delivery-details">
+        <h2>Location details</h2>
+        <label for="estate">Estate:</label>
+        <input type="text" id="estate" name="estate">
+        <br>
+        <label for="phone-number">Phone Number:</label>
+        <input type="text" id="phone-number" name="phone-number">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

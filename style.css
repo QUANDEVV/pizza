@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select,
+input[type="checkbox"],
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#order-table {
+  font-size: 14px;
+  width: auto;
+}
+
+#order-table th {
+  width: 120px;
+}
+
+#order-table td {
+  width: 200px;
+}
+
+#delivery-details {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#selections-table {
+  margin: 20px auto;
+  width: 20%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#selections-table th,
+#selections-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#selections-table th {
+  width: 120px;
+}
+
+#selections-table td {
+  width: 200px;
+}
