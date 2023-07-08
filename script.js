@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('delivery-details').style.display = 'block';
+});
+
 fetch('db.json')
   .then(response => response.json())
   .then(data => {
@@ -45,15 +49,12 @@ fetch('db.json')
       document.getElementById('crustings-selection').textContent = crustings.join(', ');
       document.getElementById('total-cost').textContent = `Ksh ${totalCost}`;
 
-      // Show delivery details
-      document.getElementById('delivery-details').style.display = 'block';
-
       // Show alert for successful order placement
-      
+      alert('Order placed successfully!');
     });
 
     // Show alert for successful data fetching (moved this alert inside the fetch callback)
-  
+    alert('Pizza data loaded successfully!');
   })
   .catch(error => {
     console.log(error);
